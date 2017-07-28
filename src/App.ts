@@ -1,3 +1,4 @@
+require('dotenv').config()
 import * as path from 'path';
 import * as express from 'express';
 import * as logger from 'morgan';
@@ -27,17 +28,6 @@ class App {
 
   // Configure API endpoints.
   private routes(): void {
-    /* This is just to get up and running, and to make sure what we've got is
-     * working so far. This function will change when we start to add more
-     * API endpoints */
-    let router = express.Router();
-    // placeholder route handler
-    router.get('/', (req, res, next) => {
-      res.json({
-        message: 'Hello World!'
-      });
-    });
-    this.express.use('/', router);
     this.express.use('/api/v1/heroes', HeroRouter);
   }
 

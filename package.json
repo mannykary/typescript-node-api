@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node dist/index.js",
+    "nodemon": "nodemon dist/index.js",
     "test": "mocha --reporter spec --compilers ts:ts-node/register 'test/**/*.test.ts'"
   },
   "keywords": [],
@@ -30,7 +31,10 @@
   "dependencies": {
     "body-parser": "^1.15.2",
     "debug": "^2.2.0",
+    "dotenv": "^4.0.0",
     "express": "^4.14.0",
-    "morgan": "^1.7.0"
+    "morgan": "^1.7.0",
+    "nodemon": "^1.11.0",
+    "sendgrid": "^5.2.0"
   }
 }

@@ -7,6 +7,8 @@ Check out the [blog post](http://mherman.org/blog/2016/11/05/developing-a-restfu
 ## Want to use this project?
 
 1. Fork/Clone
+1. Install Node v6 using nvm - `nvm install 6`
+1. Install Gulp globally - `npm install -g gulp@3.9.1`
 1. Install dependencies - `npm install`
 1. Compile - `gulp scripts`
 1. Compile assets - `gulp assets`
